@@ -27,7 +27,7 @@ class User
 
             $userData = [
                 'name' => $username,
-                'id' => $pdo->lastInsertId()
+                'id' => $pdo->lastInsertId(),
             ];
         } else {
             if (password_verify($password, $user['password'])) {
